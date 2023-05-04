@@ -6,8 +6,8 @@ This is a simple Discord.js v14 handler that you can use to manage your bot's co
 
 To use this handler, you'll need to have Node.js and Discord.js v14 installed on your system.
 
-##<a href="https://glitch.com/edit/#!/vdjs-handler">Glitch Fork</a>
-##<a href="https://replit.com/@Gup-gungun/v14handler">Replit Fork</a>
+## <a href="https://glitch.com/edit/#!/vdjs-handler">Glitch Fork</a>
+## <a href="https://replit.com/@Gup-gungun/v14handler">Replit Fork</a>
 
 1- Clone this repository or download the source code as a ZIP file.
 2- Open a terminal or command prompt in the project folder.
