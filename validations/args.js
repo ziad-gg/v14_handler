@@ -1,7 +1,7 @@
-const { Validation, Message } = require("handler.djs");
+const { Validation } = require("handler.djs");
 
 module.exports = new Validation()
-.setCommnads("all")
+.setCommnads(['setLang'])
 .setExecution(Execute);
 
 /**
@@ -11,7 +11,9 @@ module.exports = new Validation()
  * @param {Function} end 
  */
 
+
 async function Execute(message, next, end) {
+    if (message[0]) return next();
 
     const language = message.getData('language');
     const languages = message.getData('languages');
@@ -21,8 +23,9 @@ async function Execute(message, next, end) {
     const guildData = await Guilds.findOne({ guildId: (message.guild) ? message.guild.id : '' });
     client.language = (guildData && guildData.language && languages.includes(guildData.language)) ? guildData.language : language;
 
-    client.languageJson = require('../src/languages/' + client.language);
-    client.generalReplys = client.languageJson.general;
+    message.meta.cmdReplys = require(`../src/languages/${client.language}`)['help'];
+    message[0] = message.Command.name;
+    message.Application.getCommand('help').run(message);
 
-    next('cmdReplys', client.languageJson[message.cmdName]);
+    return end();
 }
