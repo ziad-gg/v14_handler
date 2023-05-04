@@ -25,12 +25,13 @@ npm install
    6. Copy the connection string provided in the code snippet.
    7. Replace the `<password>` and `<dbname>` placeholders in the connection string with your actual password and database name.
    8. Use the updated connection string as your MongoDB connection URL in your code.
-   
+
 6- Run the following command to start the bot:
 ```js
 npm start
 ```
-
+## Note 
+<h6>If your are using glitch use setCategory method in each command because handler.djs package can not get categorys name in glitch</h6>
 
 ## Adding Commands
 
