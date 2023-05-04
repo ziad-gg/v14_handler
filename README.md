@@ -25,6 +25,7 @@ npm install
    6. Copy the connection string provided in the code snippet.
    7. Replace the `<password>` and `<dbname>` placeholders in the connection string with your actual password and database name.
    8. Use the updated connection string as your MongoDB connection URL in your code.
+   
 6- Run the following command to start the bot:
 ```js
 npm start
