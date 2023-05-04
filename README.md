@@ -67,9 +67,9 @@ async function Execute(...args) {
 ```
 Replace `event-name` with the name of your event and // Event code here with your event's code.
 
-##Contributing
+## Contributing
 
 If you'd like to contribute to this project, please fork the repository and create a pull request. All contributions are welcome!
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
