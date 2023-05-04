@@ -11,11 +11,20 @@ To use this handler, you'll need to have Node.js and Discord.js v14 installed on
 3. Run the following command to install the dependencies:
 
 ```bash
- npm install
+npm install
 ```
 
 4. Rename the `.env.example` file to `.env` and fill in your bot token and prefix.
 5. Edit the `src/config.js` file to customize your bot's settings.
+6. Get your MongoDB connection URL by following these steps:
+   1. Go to the MongoDB website and sign up for an account if you don't have one already.
+   2. Create a new project and add a new cluster to it.
+   3. Click on the "Connect" button for the cluster you just created.
+   4. Select "Connect your application".
+   5. Choose the driver and version you want to use (e.g., Node.js v4.0 or later).
+   6. Copy the connection string provided in the code snippet.
+   7. Replace the `<password>` and `<dbname>` placeholders in the connection string with your actual password and database name.
+   8. Use the updated connection string as your MongoDB connection URL in your code.
 6. Run the following command to start the bot:
 ```js
 npm start
