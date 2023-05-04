@@ -1,0 +1,17 @@
+{
+  "name": "v14_handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ziath#1768 <zemad3040@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "handler.djs": "^1.8.12",
+    "mongoose": "^7.1.0"
+  }
+}
