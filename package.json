@@ -1,7 +1,7 @@
 {
   "name": "v14_handler",
   "version": "1.0.0",
-  "description": "",
+  "description": "A SIMPLE discord.js v14 handler",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
